@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor "学生" as fc
+actor "教師" as fc2
+rectangle Restaurant {
+  usecase "アンケートに回答" as UC1
+  usecase "コンテンツ視聴" as UC9
+  usecase "試験を受ける" as UC2
+  usecase "掲示板を見る" as UC3
+  usecase "お知らせを発行" as UC4
+}
+
+rectangle Rest {
+  usecase "Eat Food" as UC5
+  usecase "Pay for Food" as UC6
+  usecase "Drink" as UC7
+  usecase "Drink" as UC8
+}
+
+fc --> UC1
+fc --> UC2
+fc --> UC3
+@enduml
